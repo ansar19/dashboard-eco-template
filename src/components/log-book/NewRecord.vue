@@ -32,6 +32,256 @@
                       </d-col>
                     </d-form-row>
 
+                    <!-- vue - select -->
+                    <div class="form-group">
+                      <label for="v-select">Vue - select</label>
+                      <v-select
+                        id="v-select"
+                        label="countryName"
+                        v-model="countryName"
+                        :options="countriesOptions"
+                      ></v-select>
+                      {{ countryName }}
+                    </div>
+                    <!-- / vue - select -->
+
+                    <!-- Checkboxes -->
+                    <strong class="text-muted d-block mb-2">Checkboxes</strong>
+                    <fieldset>
+                      <div class="custom-control custom-checkbox mb-1">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="formsCheckboxDefault"
+                        />
+                        <label
+                          class="custom-control-label"
+                          for="formsCheckboxDefault"
+                          >Default</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox mb-1">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="formsCheckboxChecked"
+                          checked
+                        />
+                        <label
+                          class="custom-control-label"
+                          for="formsCheckboxChecked"
+                          >Checked</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox mb-1">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="formsCheckboxDisabled"
+                          disabled
+                        />
+                        <label
+                          class="custom-control-label"
+                          for="formsCheckboxDisabled"
+                          >Disabled</label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox mb-1">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="formsCheckboxDisabledChecked"
+                          disabled
+                          checked
+                        />
+                        <label
+                          class="custom-control-label"
+                          for="formsCheckboxDisabledChecked"
+                          >Disabled Checked</label
+                        >
+                      </div>
+                    </fieldset>
+                    <!-- / Checkboxes -->
+
+                    <!-- Radios -->
+                    <strong class="text-muted d-block mb-2"
+                      >Radio Buttons</strong
+                    >
+                    <fieldset>
+                      <div class="custom-control custom-radio mb-1">
+                        <input
+                          type="radio"
+                          id="formsRadioDefault"
+                          name="formsRadioDefault"
+                          class="custom-control-input"
+                        />
+                        <label
+                          class="custom-control-label"
+                          for="formsRadioDefault"
+                          >Default</label
+                        >
+                      </div>
+                      <div class="custom-control custom-radio mb-1">
+                        <input
+                          type="radio"
+                          id="formsRadioChecked"
+                          name="formsRadioChecked"
+                          class="custom-control-input"
+                          checked
+                        />
+                        <label
+                          class="custom-control-label"
+                          for="formsRadioChecked"
+                          >Checked</label
+                        >
+                      </div>
+                      <div class="custom-control custom-radio mb-1">
+                        <input
+                          type="radio"
+                          id="formsRadioDisabled"
+                          name="formsRadioDisabled"
+                          class="custom-control-input"
+                          disabled
+                        />
+                        <label
+                          class="custom-control-label"
+                          for="formsRadioDisabled"
+                          >Disabled</label
+                        >
+                      </div>
+                      <div class="custom-control custom-radio mb-1">
+                        <input
+                          type="radio"
+                          id="formsRadioDisabledChecked"
+                          name="formsRadioDisabledChecked"
+                          class="custom-control-input"
+                          disabled
+                          checked
+                        />
+                        <label
+                          class="custom-control-label"
+                          for="formsRadioDisabledChecked"
+                          >Disabled Checked</label
+                        >
+                      </div>
+                    </fieldset>
+                    <!-- / Radios -->
+
+                    <!-- Small Buttons -->
+                    <strong class="text-muted d-block my-2"
+                      >Small Buttons</strong
+                    >
+                    <div class="row mb-3">
+                      <div class="col">
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-primary mr-1"
+                        >
+                          Primary
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-secondary mr-1"
+                        >
+                          Secondary
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-success mr-1"
+                        >
+                          Success
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-danger mr-1"
+                        >
+                          Danger
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-warning mr-1"
+                        >
+                          Warning
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-info mr-1"
+                        >
+                          Info
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-dark mr-1"
+                        >
+                          Dark
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-white mr-1"
+                        >
+                          White
+                        </button>
+                      </div>
+                    </div>
+                    <!-- / Small Buttons -->
+                    <!-- Small Outline Buttons -->
+                    <strong class="text-muted d-block mb-2"
+                      >Small Outline Buttons</strong
+                    >
+                    <div class="row">
+                      <div class="col">
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-outline-primary mr-1"
+                        >
+                          Primary
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-outline-secondary mr-1"
+                        >
+                          Secondary
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-outline-success mr-1"
+                        >
+                          Success
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-outline-danger mr-1"
+                        >
+                          Danger
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-outline-warning mr-1"
+                        >
+                          Warning
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-outline-info mr-1"
+                        >
+                          Info
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-outline-dark mr-1"
+                        >
+                          Dark
+                        </button>
+                        <button
+                          type="button"
+                          class="mb-2 btn btn-sm btn-outline-light mr-1"
+                        >
+                          Light
+                        </button>
+                      </div>
+                    </div>
+                    <!-- / Small Outline Buttons -->
+
                     <div class="form-group">
                       <label for="feInputAddress">Address</label>
                       <d-input id="feInputAddress" placeholder="1234 Main St" />
@@ -81,3 +331,23 @@
     </d-row>
   </d-container>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      countryName: '',
+      countriesOptions: [
+        {
+          countryCode: 'CA',
+          countryName: 'Canada',
+        },
+        {
+          countryCode: 'US',
+          countryName: 'USA',
+        },
+      ],
+    };
+  },
+};
+</script>

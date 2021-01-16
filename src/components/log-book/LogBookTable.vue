@@ -3,7 +3,7 @@
     <vue-good-table
       :columns="columns"
       :rows="rows"
-      styleClass="vgt-table striped bordered"
+      styleClass="vgt-table condensed striped"
       :search-options="{
         enabled: true,
         placeholder: 'Введите текст для поиска',

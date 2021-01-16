@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col">
         <div class="card card-small mb-4">
-          <div>
+          <div class="card-body">
             <LogBookTable :rows="rows" />
           </div>
         </div>
