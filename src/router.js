@@ -3,14 +3,10 @@ import Router from 'vue-router';
 
 import PersonalBlog from './views/PersonalBlog.vue';
 import UserProfileLite from './views/UserProfileLite.vue';
-import AddNewPost from './views/AddNewPost.vue';
 import Errors from './views/Errors.vue';
-import ComponentsOverview from './views/ComponentsOverview.vue';
-import Tables from './views/Tables.vue';
+import Users from './views/Users.vue';
 import History from './views/History.vue';
 import NewRecord from './components/log-book/NewRecord.vue';
-
-import BlogPosts from './views/BlogPosts.vue';
 
 Vue.use(Router);
 
@@ -33,14 +29,9 @@ export default new Router({
       component: PersonalBlog,
     },
     {
-      path: '/user-profile-lite',
-      name: 'user-profile-lite',
+      path: '/user-profile',
+      name: 'user-profile',
       component: UserProfileLite,
-    },
-    {
-      path: '/add-new-post',
-      name: 'add-new-post',
-      component: AddNewPost,
     },
     {
       path: '/add-new-record',
@@ -54,24 +45,14 @@ export default new Router({
       component: Errors,
     },
     {
-      path: '/components-overview',
-      name: 'components-overview',
-      component: ComponentsOverview,
-    },
-    {
-      path: '/tables',
-      name: 'tables',
-      component: Tables,
+      path: '/users',
+      name: 'users',
+      component: Users,
     },
     {
       path: '/history',
       name: 'history',
       component: History,
-    },
-    {
-      path: '/blog-posts',
-      name: 'blog-posts',
-      component: BlogPosts,
     }, {
       path: '*',
       redirect: '/errors',

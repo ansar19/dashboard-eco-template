@@ -282,6 +282,58 @@
                     </div>
                     <!-- / Small Outline Buttons -->
 
+                    <!-- Progress Bars -->
+                    <div class="mb-2">
+                      <strong class="text-muted d-block mb-3"
+                        >Progress Bars</strong
+                      >
+                      <div class="progress progress-sm mb-3">
+                        <div
+                          id="progress-bar-example-1"
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 20%"
+                          aria-valuenow="20"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="progress progress-sm mb-3">
+                        <div
+                          id="progress-bar-example-2"
+                          class="progress-bar bg-info"
+                          role="progressbar"
+                          style="width: 40%"
+                          aria-valuenow="40"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="progress progress-sm mb-3">
+                        <div
+                          id="progress-bar-example-3"
+                          class="progress-bar bg-danger"
+                          role="progressbar"
+                          style="width: 60%"
+                          aria-valuenow="60"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="progress progress-sm">
+                        <div
+                          id="progress-bar-example-4"
+                          class="progress-bar bg-warning"
+                          role="progressbar"
+                          style="width: 80%"
+                          aria-valuenow="80"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <!-- / Progress Bars -->
+
                     <div class="form-group">
                       <label for="feInputAddress">Address</label>
                       <d-input id="feInputAddress" placeholder="1234 Main St" />
@@ -294,6 +346,47 @@
                         placeholder="Apartment, Studio, or Floor"
                       />
                     </div>
+
+                    <d-form validated>
+                      <d-form-row>
+                        <d-col md="6" class="form-group">
+                          <d-input
+                            value="Vasile"
+                            placeholder="First name"
+                            required
+                          />
+                          <d-form-valid-feedback
+                            >The first name looks good!</d-form-valid-feedback
+                          >
+                        </d-col>
+
+                        <d-col md="6" class="form-group">
+                          <d-input
+                            value="Catalin"
+                            placeholder="Last name"
+                            required
+                          />
+                          <d-form-valid-feedback
+                            >The last name looks good!</d-form-valid-feedback
+                          >
+                        </d-col>
+                      </d-form-row>
+                      <div class="form-group">
+                        <d-input placeholder="Username" required />
+                        <d-form-invalid-feedback
+                          >The username is taken.</d-form-invalid-feedback
+                        >
+                      </div>
+                      <div class="form-group">
+                        <d-select required>
+                          <option>Choose</option>
+                          <option>...</option>
+                        </d-select>
+                        <d-form-invalid-feedback
+                          >Please select your state</d-form-invalid-feedback
+                        >
+                      </div>
+                    </d-form>
 
                     <d-form-row>
                       <d-col md="6" class="form-group">
